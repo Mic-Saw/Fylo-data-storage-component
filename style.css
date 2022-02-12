@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  color: #dbd9ff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+@media (orientation: portrait) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 330px;
+    height: 100%;
+    background-image: url("/images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    height: 413px;
+  }
+
+  section.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 326px;
+    height: 201px;
+    padding: 40px 41px;
+    background-color: #1e2d69;
+    border-radius: 10px 100px 10px 10px;
+  }
+
+  section.first div {
+    width: 135px;
+    height: 40px;
+  }
+
+  section.first > div:last-child {
+    display: flex;
+    width: 176px;
+    height: 48px;
+  }
+
+  section.first div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    background-color: #0c122c;
+    border-radius: 10px;
+  }
+
+  section.second {
+    position: relative;
+    width: 326px;
+    height: 196px;
+  }
+
+  section.second div.used {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    height: 160px;
+    padding: 32px 32px 52px 32px;
+    background-color: #1e2d69;
+    border-radius: 10px;
+  }
+
+  section.second div.used p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  section.second div.used div.bar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 20px;
+    padding-left: 2px;
+    background-color: #0c122c;
+    border-radius: 10px;
+  }
+
+  section.second div.used div.bar div.bar-lenght {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 77%;
+    height: 14px;
+    padding-right: 2px;
+    background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+    border-radius: 10px;
+  }
+  section.second div.used div.bar div.bar-lenght div.point {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  section.second div.used div.scale {
+    display: flex;
+    justify-content: space-between;
+    width: 130%;
+  }
+
+  div.left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    transform: translate(74px, -36px);
+    width: 179px;
+    height: 72px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 4rem;
+    color: #0c122c;
+  }
+
+  div.left p + p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #666;
+  }
+
+  span {
+    font-weight: 700;
+  }
+  p + p {
+    font-weight: 700;
+  }
+
+  .triangle {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #0c122c;
+    background-image: url("/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 920px;
+    height: 201px;
+  }
+
+  section.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 350px;
+    height: 201px;
+    padding: 40px 41px;
+    background-color: #1e2d69;
+    border-radius: 10px 100px 10px 10px;
+  }
+
+  section.first div {
+    width: 135px;
+    height: 40px;
+  }
+
+  section.first > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 176px;
+    height: 48px;
+  }
+
+  section.first div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #0c122c;
+    border-radius: 10px;
+  }
+
+  section.second {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 540px;
+    height: 201px;
+  }
+
+  section.second div.used {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 540px;
+    height: 154px;
+    padding: 40px;
+    background-color: #1e2d69;
+    border-radius: 10px;
+  }
+
+  section.second div.used div.bar {
+    width: 459px;
+    height: 20px;
+    background-color: #0c122c;
+    border-radius: 10px;
+  }
+
+  section.second div.used p {
+    width: 100%;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  section.second div.used div.bar {
+    display: flex;
+    align-items: center;
+    width: 459px;
+    height: 20px;
+    padding-left: 2px;
+    background-color: #0c122c;
+    border-radius: 10px;
+  }
+
+  section.second div.used div.bar div.bar-lenght {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 339px;
+    height: 14px;
+    padding-right: 2px;
+    background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+    border-radius: 10px;
+  }
+  section.second div.used div.bar div.bar-lenght div.point {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  section.second div.used div.scale {
+    display: flex;
+    justify-content: space-between;
+    width: 133%;
+  }
+
+  div.left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 321px;
+    background-color: #ffffff;
+    width: 179px;
+    height: 72px;
+    border-radius: 10px;
+    font-size: 4rem;
+    color: #0c122c;
+  }
+
+  section.second div.left p + p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #666;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  p + p {
+    font-weight: 700;
+  }
+
+  .triangle {
+    position: absolute;
+    width: 22.66px;
+    height: 45.32px;
+    right: 0;
+    bottom: -22.66px;
+    background-color: #ffffff;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+  }
+}
